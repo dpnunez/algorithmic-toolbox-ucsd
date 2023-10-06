@@ -1,3 +1,13 @@
-*/*
-!*/*.cpp
-!*/*.py
+# Ignore todos os arquivos e pastas
+*
+
+# Exceto arquivos .cpp e .py
+!*.cpp
+!*.py
+
+# Negar a regra de ignorar pastas
+!*/
+
+# Exceto pastas que contêm arquivos .cpp e .py
+!**/*.cpp
+!**/*.py

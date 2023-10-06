@@ -51,10 +51,12 @@ void stress_test() {
 
 
 int main() {
-    int n;
-    std::cin >> n;
-		// stress_test();
-    // int c = get_fibonacci_last_digit_naive(n);
-		int c = get_fibonacci_last_digit_fast(n);
-    std::cout << c << '\n';
-    }
+	int n;
+	std::cin >> n;
+	// stress_test();
+	// int c = get_fibonacci_last_digit_naive(n);
+	int c = get_fibonacci_last_digit_fast(n);
+	std::cout << c << '\n';
+
+	return 0;
+}
