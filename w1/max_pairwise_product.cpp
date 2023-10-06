@@ -45,41 +45,41 @@ long long MaxPairwiseProductFast(const std::vector<int>& numbers) {
     return ((long long)numbers[index1]) * numbers[index2];
 }
 
-// int main() {
-//     int n;
-//     std::cin >> n;
-//     std::vector<int> numbers(n);
-//     for (int i = 0; i < n; ++i) {
-//         std::cin >> numbers[i];
-//     }
+int main() {
+    int n;
+    std::cin >> n;
+    std::vector<int> numbers(n);
+    for (int i = 0; i < n; ++i) {
+        std::cin >> numbers[i];
+    }
 
-//     std::cout << MaxPairwiseProductFast(numbers) << "\n";
-//     return 0;
-// }
+    std::cout << MaxPairwiseProductFast(numbers) << "\n";
+    return 0;
+}
 
 
 // Stress test
-int main() {
-	while(true) {
-		int n = rand() % 10 + 2;
-		std::cout << n << "\n";
-		std::vector<int> a;
-		for(int i = 0; i < n; i++) {
-			a.push_back(rand() % 100000);
-		}
+// int main() {
+// 	while(true) {
+// 		int n = rand() % 10 + 2;
+// 		std::cout << n << "\n";
+// 		std::vector<int> a;
+// 		for(int i = 0; i < n; i++) {
+// 			a.push_back(rand() % 100000);
+// 		}
 
-		for(int i = 0; i < n; i++) {
-			std::cout << a[i] << ' ';
-		}
+// 		for(int i = 0; i < n; i++) {
+// 			std::cout << a[i] << ' ';
+// 		}
 
-		long long res1 = MaxPairwiseProduct(a);
-		long long res2 = MaxPairwiseProductFast(a);
-		if (res1 != res2) {
-			std::cout << "Wrong answer: " << res1 << " " << res2 << "\n";
-			break;
-		}
-		else {
-			std::cout << "OK\n";
-		}
-	}
-}
+// 		long long res1 = MaxPairwiseProduct(a);
+// 		long long res2 = MaxPairwiseProductFast(a);
+// 		if (res1 != res2) {
+// 			std::cout << "Wrong answer: " << res1 << " " << res2 << "\n";
+// 			break;
+// 		}
+// 		else {
+// 			std::cout << "OK\n";
+// 		}
+// 	}
+// }
