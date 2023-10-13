@@ -11,3 +11,5 @@
 # Exceto pastas que contêm arquivos .cpp e .py
 !**/*.cpp
 !**/*.py
+!**/*.jpg
+!**/*.pdf
