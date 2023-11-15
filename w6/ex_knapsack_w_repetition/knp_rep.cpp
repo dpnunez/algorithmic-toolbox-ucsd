@@ -1,16 +1,13 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 
 using std::vector;
-using std::min;
-using std::cout;
-
 
 int knap(int n, int capacity, vector<int> &v, vector<int> &w) {
-  vector<int> chunk_values(capacity+1);
+  vector<int> chunk_values(capacity + 1);
   chunk_values[0] = 0;
 
-  for(int i=1; i<=capacity; i++) {
+  for (int i = 1; i <= capacity; i++) {
     int value = 0;
     for (int j = 0; j < n; j++) {
       if (w[j] <= i) {
